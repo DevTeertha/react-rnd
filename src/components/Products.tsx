@@ -10,6 +10,7 @@ interface IProductInfo {
 const Products = () => {
   const productsInfo = useSelector((state: IProductInfo) => state);
   const { isLoading, error, products } = productsInfo;
+  console.log(productsInfo);
 
   return (
     <div>
