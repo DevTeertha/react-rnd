@@ -1,19 +1,36 @@
 import React from "react";
 
-const ProductCard = () => {
+interface IPRODUCTOBJ{
+category: string
+description: string
+image: any
+price: any
+rating: any
+title: string
+}
+
+interface IPROPS {
+  key: any
+  product: IPRODUCTOBJ
+} 
+
+
+
+const ProductCard = ({product}: any) => {
+  const {title, price, image} = product
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
+    <div className="card p-2 shadow-xl">
+      <figure className="w-36 mx-auto">
         <img
-          src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          src={image}
           alt="Shoes"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title">{title}</h2>
+        <p className="text-xl text-red-500 font-semibold">${price}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn btn-primary">ADD TO CART</button>
         </div>
       </div>
     </div>
