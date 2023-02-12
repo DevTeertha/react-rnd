@@ -19,9 +19,10 @@ interface IPROPS {
 const ProductCard = ({product}: any) => {
   const {title, price, image} = product
   return (
-    <div className="card p-2 shadow-xl">
-      <figure className="w-36 mx-auto">
+    <div className="card p-2 bg-white shadow-xl">
+      <figure className="h-40 mx-auto">
         <img
+          className="p-24"
           src={image}
           alt="Shoes"
         />

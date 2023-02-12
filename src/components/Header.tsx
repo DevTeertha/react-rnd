@@ -4,7 +4,7 @@ const Header = () => {
         
     <div className="navbar mx-auto max-w-6xl">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">R&D Task 1</a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">

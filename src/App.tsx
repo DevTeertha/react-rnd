@@ -5,11 +5,11 @@ import Products from './components/Products';
 
 const App = () => {
   return (
-    <>
+    <div className='bg-slate-200'>
       <Header></Header>
       <Hero></Hero>
       <Products/>
-    </>
+    </div>
   );
 };
 
