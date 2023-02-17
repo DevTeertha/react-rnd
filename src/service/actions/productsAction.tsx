@@ -1,5 +1,9 @@
 import axios from "axios";
-import { GET_PRODUCTS_FAILED, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS } from "../constants/productsConstant";
+import { 
+    GET_PRODUCTS_FAILED,
+    GET_PRODUCTS_REQUEST,
+    GET_PRODUCTS_SUCCESS
+} from "../constants/productsConstant";
 
 export const getAllProducts = () => async(dispatch:any) => {
     dispatch({ type: GET_PRODUCTS_REQUEST })
